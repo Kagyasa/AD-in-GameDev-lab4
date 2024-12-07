@@ -58,7 +58,7 @@
 Я добавила в скрипт с перцетроном следующий код:
 
 
-```
+```cs
 private int isWhite(Color color) => color == Color.green ? 1 : 0;
 
 void OnTriggerEnter(Collider other)
@@ -80,7 +80,7 @@ void OnTriggerEnter(Collider other)
     this.gameObject.GetComponent<Renderer>().material.color = outputColor;
     Destroy(other.gameObject);
 }
-```.
+```
 для верхних кубов добавила компонент rigidbody, а к нижним применила скрипт перцептрона и в boxCollider включила Is Trigger
 
 Результаты:
